@@ -1,4 +1,27 @@
 /* Basic configuration */
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format(ttf);
+}
+
+:root {
+    --principal-font: 'Hanken Grotesk';
+    --dark-gray-blue: hsl(224, 30%, 27%);
+    --light-red: hsl(0, 100%, 67%);
+    --light-red-bg: hsla(0, 100%, 67%, 0.100);
+    --orange-yellow: hsl(39, 100%, 56%);
+    --orange-yellow-bg: hsla(39, 100%, 56%, 0.112);
+    --green-teal: hsl(166, 100%, 37%);
+    --green-teal-bg: hsla(166, 100%, 37%, 0.116);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --cobalt-blue-bg: hsla(234, 85%, 45%, 0.108);
+    --light-lavender: hsl(241, 100%, 86%);
+    --bg-light-slate-blue: hsl(252, 100%, 67%);
+    --bg-light-royal-blue: hsl(241, 81%, 54%);
+    --cl-violet-blue: hsla(256, 72%, 46%, 1);
+    --cl-persian-blue: hsla(241, 72%, 46%, 0);
+}
+
 /* Establecer el 62.5% de font-size en el elemento html */
 html {
     font-size: 62.5%;
@@ -9,9 +32,10 @@ html, body {
     width: 100%;
     height: 100%;
 }
-  
+
 /* Establecer box-sizing en border-box para todos los elementos */
 *, *::before, *::after {
+    font-family: var(--principal-font);
     box-sizing: border-box;
     margin: 0; /* Elimina márgenes predeterminados */
     padding: 0; /* Elimina relleno predeterminado */
@@ -20,8 +44,144 @@ html, body {
 /* Configurar el contenedor principal */
 .container {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
+/* Result section */
+.result {
+    display: flex;
+    min-height: 40vh;
+    padding: 4rem 6.2rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(var(--bg-light-slate-blue), var(--bg-light-royal-blue));
+    color: var(--light-lavender);
+    font-weight: 600;
+    gap: 2rem;
+
+    /* General configs to score-circle and details-score */
+    > div {
+        display: flex;
+        font-size: 1.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* score-circle */
+    .result__circle {
+        padding: 2.2rem 3.6rem;
+        border-radius: 8.6rem;
+        background: linear-gradient(var(--cl-violet-blue),var(--cl-persian-blue));
+        /* Score */
+        #score {
+            font-size: 5rem;
+            color: white;
+        }
+    }
+
+    .result__state{
+        font-size: 2rem;
+        color: white;
+    }
+
+    .result__description {
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+/* Summary section */
+.summary{
+    display: flex;
+    min-height: 55vh;
+    padding: 3rem;
+    flex-direction: column;
+    
+    /* Score by Categorie */
+    .summary__cats{
+        display: flex;
+        padding: 2rem 0;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1.5rem;
+        
+        /* Categories */
+        .summary__cat{
+            display: flex;
+            width: 100%;
+            padding: 1.4rem 1.6rem;
+            border-radius: 1rem;
+            font-size: 1.3rem;
+            justify-content: space-between;
+            align-items: center;
+            background-color: aqua;
+
+            /* Categories Icon and title */
+            .cat__left{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: .7rem;
+            }
+        }
+
+        /* Reaction categorie */
+        .summary__reaction {
+            background-color: var(--light-red-bg);
+
+            > .cat__left {
+                color: var(--light-red);
+            }
+        }
+
+        /* Memory categorie */
+        .summary__memory {
+            background-color: var(--orange-yellow-bg);
+
+            > .cat__left {
+                color: var(--orange-yellow);
+            }
+        }
+
+        /* Verbal categorie */
+        .summary__verbal {
+            background-color: var(--green-teal-bg);
+
+            > .cat__left {
+                color: var(--green-teal);
+            }
+        }
+
+        /* Visual categorie */
+        .summary__visual {
+            background-color: var(--cobalt-blue-bg);
+
+            > .cat__left {
+                color: var(--cobalt-blue);
+            }
+        }
+
+    }
+}
+
+/* Button component */ 
+.button {
+    font-size: 1.7rem;
+    padding: 1.6rem 0;
+    border-radius: 2.6rem;
+    border: none;
+    background-color: var(--dark-gray-blue);
+    font-weight: bold;
+    color: white;
+}
+
+/* Atributtion section */
+
+footer{ padding-bottom: 2rem; }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
