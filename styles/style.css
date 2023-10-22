@@ -8,16 +8,21 @@ html {
 html, body {
     width: 100%;
     height: 100%;
-    margin: 0; /* Elimina márgenes predeterminados */
-    padding: 0; /* Elimina relleno predeterminado */
     overflow: hidden; /* Evita barras de desplazamiento predeterminadas */
 }
   
 /* Establecer box-sizing en border-box para todos los elementos */
 *, *::before, *::after {
     box-sizing: border-box;
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina relleno predeterminado */
 }
 
+/* Configurar el contenedor principal */
+.container {
+    width: 100vw;
+    height: 100vh;
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
