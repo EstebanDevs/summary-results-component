@@ -1,11 +1,26 @@
 /* Basic configuration */
 @font-face {
     font-family: 'Hanken Grotesk';
-    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format(ttf);
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url(../assets/fonts/static/HankenGrotesk-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url(../assets/fonts/static/HankenGrotesk-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url(../assets/fonts/static/HankenGrotesk-ExtraBold.ttf) format("truetype");
 }
 
 :root {
-    --principal-font: 'Hanken Grotesk';
+    --principal-font: "Hanken Grotesk";
     --dark-gray-blue: hsl(224, 30%, 27%);
     --light-red: hsl(0, 100%, 67%);
     --light-red-bg: hsla(0, 100%, 67%, 0.100);
@@ -20,6 +35,7 @@
     --bg-light-royal-blue: hsl(241, 81%, 54%);
     --cl-violet-blue: hsla(256, 72%, 46%, 1);
     --cl-persian-blue: hsla(241, 72%, 46%, 0);
+    --principal-gradient: linear-gradient(var(--bg-light-slate-blue), var(--bg-light-royal-blue));
 }
 
 /* Establecer el 62.5% de font-size en el elemento html */
@@ -51,7 +67,7 @@ html, body {
 .result {
     display: flex;
     min-height: 50vh;
-    padding: 4rem 6.2rem;
+    padding: 4rem 5.5rem;
     border-bottom-left-radius: 3rem;
     border-bottom-right-radius: 3rem;
     flex-direction: column;
@@ -180,8 +196,12 @@ html, body {
     color: white;
 }
 
+.button:hover {
+    background: var(--principal-gradient);
+}
+
 /* Atributtion section */
 
 footer{ padding-bottom: 2rem; }
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(228, 45%, 44%); text-decoration: none; }
