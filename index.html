@@ -5,64 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 768px)">
   <title>Frontend Mentor | Results summary component</title>
 </head>
 <body>
   <main class="container">
 
     <!-- Display general score section -->
-    <section class="result">
-      <h2 class="result__title">Your Result</h3>
-      <div class="result__circle">
-        <span id="score"><strong>76</strong></span>
-        <span>of 100</span>
-      </div>
-      <div>
-        <strong class="result__state">Great</strong>
-        <p class="result__description">You scored higher than 65% of the people who have taken these tests.</p>
-      </div>
-    </section>
-
-    <!-- Score by categories sections -->
-    <section class="summary">
-      <h2 class="summary__title">Summary</h3>
-
-      <div class="summary__cats">
-        <article class="summary__cat summary__reaction">
-          <div class="cat__left">
-            <img src="./assets/images/icon-reaction.svg" alt="Bold icon">
-            <span><strong>Reaction</strong></span>
-          </div>
-          <div class="cat__right"><strong><span id="reaction-score">80</span></strong> / 100</div>
-        </article>
-
-        <article class="summary__cat summary__memory">
-          <div class="cat__left">
-            <img src="./assets/images/icon-memory.svg" alt="Brain icon">
-            <span><strong>Memory</strong></span>
-          </div>
-          <div class="cat__right"><strong><span id="memory-score">92</span></strong> / 100</div>
-        </article>
-        
-        <article class="summary__cat summary__verbal">
-          <div class="cat__left">
-            <img src="./assets/images/icon-verbal.svg" alt="Comment icon">
-            <span><strong>Verbal</strong></span>
-          </div>
-          <div class="cat__right"><strong><span id="verbal-score">61</span></strong> / 100</div>
-        </article>
-        
-        <article class="summary__cat summary__visual">
-          <div class="cat__left">
-            <img src="./assets/images/icon-visual.svg" alt="Eye icon">
-            <span><strong>Visual</strong></span>
-          </div>
-          <div class="cat__right"><strong><span id="visual-score">72</span></strong> / 100</div>
-        </article>
-      </div>
-
-      <button class="button">Continue</button>
-    </section>
+    <div>
+      <section class="result">
+        <h2 class="result__title">Your Result</h3>
+        <div class="result__circle">
+          <span id="score"><strong>76</strong></span>
+          <span>of 100</span>
+        </div>
+        <div>
+          <strong class="result__state">Great</strong>
+          <p class="result__description">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </section>
+      <!-- Score by categories sections -->
+      <section class="summary">
+        <h2 class="summary__title">Summary</h3>
+        <div class="summary__cats">
+          <article class="summary__cat summary__reaction">
+            <div class="cat__left">
+              <img src="./assets/images/icon-reaction.svg" alt="Bold icon">
+              <span><strong>Reaction</strong></span>
+            </div>
+            <div class="cat__right"><strong><span id="reaction-score">80</span></strong> / 100</div>
+          </article>
+          <article class="summary__cat summary__memory">
+            <div class="cat__left">
+              <img src="./assets/images/icon-memory.svg" alt="Brain icon">
+              <span><strong>Memory</strong></span>
+            </div>
+            <div class="cat__right"><strong><span id="memory-score">92</span></strong> / 100</div>
+          </article>
+      
+          <article class="summary__cat summary__verbal">
+            <div class="cat__left">
+              <img src="./assets/images/icon-verbal.svg" alt="Comment icon">
+              <span><strong>Verbal</strong></span>
+            </div>
+            <div class="cat__right"><strong><span id="verbal-score">61</span></strong> / 100</div>
+          </article>
+      
+          <article class="summary__cat summary__visual">
+            <div class="cat__left">
+              <img src="./assets/images/icon-visual.svg" alt="Eye icon">
+              <span><strong>Visual</strong></span>
+            </div>
+            <div class="cat__right"><strong><span id="visual-score">72</span></strong> / 100</div>
+          </article>
+        </div>
+        <button class="button">Continue</button>
+      </section>
+    </div>
   </main>
 
   <!-- Atributtions section -->

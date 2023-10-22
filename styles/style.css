@@ -116,7 +116,8 @@ html, body {
     min-height: 50vh;
     padding: 3rem;
     flex-direction: column;
-    
+    background-color: white;
+
     /* Score by Categorie */
     .summary__cats{
         display: flex;

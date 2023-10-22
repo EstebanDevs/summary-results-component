@@ -1,0 +1,43 @@
+* {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: red;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > div {
+    display: flex;
+    background-color: white;
+    border-radius: 3rem;
+}
+
+.result {
+    min-width: 32rem;
+    width: 32vw;
+    max-width: 39rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    padding: 3.5rem 5.5rem;
+    justify-content: space-between;
+    
+    .result__circle{
+        padding: 3.8rem 5.2rem;
+    }
+}
+
+.summary {
+    min-width: 32rem;
+    width: 32vw;
+    max-width: 39rem;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    padding: 3.5rem 3rem;
+    justify-content: space-around;
+}
