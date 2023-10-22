@@ -50,7 +50,7 @@ html, body {
 /* Result section */
 .result {
     display: flex;
-    min-height: 40vh;
+    min-height: 50vh;
     padding: 4rem 6.2rem;
     border-bottom-left-radius: 3rem;
     border-bottom-right-radius: 3rem;
@@ -97,7 +97,7 @@ html, body {
 /* Summary section */
 .summary{
     display: flex;
-    min-height: 55vh;
+    min-height: 50vh;
     padding: 3rem;
     flex-direction: column;
     
