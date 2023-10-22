@@ -12,7 +12,7 @@
     <section class="result">
       <h3 class="result__title">Your Result</h3>
       <div class="result__circle">
-        <span id="score">76</span>
+        <span id="score"><strong>76</strong></span>
         <span>of 100</span>
       </div>
       <strong class="result__state">Great</strong>
@@ -21,27 +21,43 @@
 
     <section class="summary">
       <h3 class="summary__title">Summary</h3>
-      <article class="summary__cath">
-        Reaction
-        80 / 100
+      <!-- Score by categories -->
+      <article class="summary__cat">
+        <div class="cat__left">
+          <img src="./assets/images/icon-reaction.svg" alt="Bold icon">
+          <span><strong>Reaction</strong></span>
+        </div>
+        <div class="cat__right"><strong><span id="reaction-score">80</span></strong> / 100</div>
       </article>
-      <article class="summary__cath">
-        Memory
-        92 / 100
+
+      <article class="summary__cat">
+        <div class="cat__left">
+          <img src="./assets/images/icon-memory.svg" alt="Brain icon">
+          <span><strong>Memory</strong></span>
+        </div>
+        <div class="cat__right"><strong><span id="memory-score">92</span></strong> / 100</div>
       </article>
-      <article class="summary__cath">
-        Verbal
-        61 / 100
+      
+      <article class="summary__cat">
+        <div class="cat__left">
+          <img src="./assets/images/icon-verbal.svg" alt="Comment icon">
+          <span><strong>Verbal</strong></span>
+        </div>
+        <div class="cat__right"><strong><span id="verbal-score">61</span></strong> / 100</div>
       </article>
-      <article class="summary__cath">
-        Visual
-        72 / 100
+      
+      <article class="summary__cat">
+        <div class="cat__left">
+          <img src="./assets/images/icon-visual.svg" alt="Eye icon">
+          <span><strong>Visual</strong></span>
+        </div>
+        <div class="cat__right"><strong><span id="visual-score">72</span></strong> / 100</div>
       </article>
 
       <button class="button">Continue</button>
     </section>
   </main>
-  
+
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

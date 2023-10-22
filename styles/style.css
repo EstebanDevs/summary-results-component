@@ -8,7 +8,6 @@ html {
 html, body {
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Evita barras de desplazamiento predeterminadas */
 }
   
 /* Establecer box-sizing en border-box para todos los elementos */
