@@ -2,10 +2,6 @@
     overflow-x: hidden;
 }
 
-body {
-    background-color: red;
-}
-
 .container {
     display: flex;
     justify-content: center;
@@ -16,6 +12,7 @@ body {
     display: flex;
     background-color: white;
     border-radius: 3rem;
+    box-shadow: 10px 10px 32px -12px rgba(0,0,0,0.56)
 }
 
 .result {
